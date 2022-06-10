@@ -55,41 +55,41 @@ def play_previous():
 
 
 
-musicplayericon = PhotoImage(file="clipart326945.png")
+musicplayericon = PhotoImage(file="images\clipart326945.png")
 root.iconphoto(False,musicplayericon)
 
-headerphoto = PhotoImage(file="top.png")
+headerphoto = PhotoImage(file="images\\top.png")
 Label(root,image=headerphoto,bg="#0f1a2b").pack()
 
-mainphoto = PhotoImage(file="inside music.png")
+mainphoto = PhotoImage(file="images\inside music.png")
 Label(root,image=mainphoto,bg="#0f1a2b",width=200,height=203).place(x=58,y=119)
 
 # playbutton
-playbutton = PhotoImage(file="playbutton.png")
+playbutton = PhotoImage(file="images\playbutton.png")
 Button(root,image=playbutton,bg="#0f1a2b",bd=0,command=play_song).place(x=115,y=330)
 
 # stopbutton
-stopbutton = PhotoImage(file="stop.png")
+stopbutton = PhotoImage(file="images\stop.png")
 Button(root,image=stopbutton,bg="#0f1a2b",bd=0, command=mixer.music.stop).place(x=15,y=485)
 
 # resumebutton
-resumebutton = PhotoImage(file="resume.png")
+resumebutton = PhotoImage(file="images\\resume.png")
 Button(root,image=resumebutton,bg="#0f1a2b",bd=0,command=mixer.music.unpause).place(x=115,y=510)
 
 # pausebutton
-pausebutton = PhotoImage(file="pause.png")
+pausebutton = PhotoImage(file="images\pause.png")
 Button(root,image=pausebutton,bg="#0f1a2b",bd=0,command=mixer.music.pause).place(x=270,y=500)
 
 #play_previous
-playprevious = PhotoImage(file="Previous.png")
+playprevious = PhotoImage(file="images\Previous.png")
 Button(root,image=playprevious,bg="#0f1a2b",bd=0,command=play_previous).place(x=80,y=580)
 
 #playnext
-playnext = PhotoImage(file="Next-Button.png")
+playnext = PhotoImage(file="images\\Next-Button.png")
 Button(root,image=playnext,bg="#0f1a2b",bd=0,command=play_next).place(x=220,y=580)
 
 # musiclist
-menu = PhotoImage(file="menu.png")
+menu = PhotoImage(file="images\menu.png")
 Label(root,image=menu,bg="#0f1a2b").pack(padx=30,pady=50,side=RIGHT,anchor="w")
 
 #current playing music label
